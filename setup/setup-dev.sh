@@ -26,7 +26,7 @@ function setup_dev(){
   echo "####################################"
   echo "Install Git Tools"
   echo "####################################"
-  sudo apt-get install git git-core git-extras
+  sudo apt-get install git git-core git-extras git-flow
 
   echo "####################################"
   echo "Set up .bashrc"
