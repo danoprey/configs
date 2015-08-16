@@ -11,6 +11,8 @@
 #Set up .xmonad/*
 function setup_xmonad(){
   ln -s ../xmonad-ubuntu-conf ~/.xmonad
+  #Invert mouse scrolling
+  echo "pointer = 1 2 3 5 4 7 6 8 9 10 11 12" > ~/.Xmodmap && xmodmap ~/.Xmodmap
 
 
 echo "####################################"

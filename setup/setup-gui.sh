@@ -21,6 +21,15 @@ function setup_gui(){
   echo "####################################"
   dconf write /org/compiz/profiles/unity/plugins/core/hsize 3
   dconf write /org/compiz/profiles/unity/plugins/core/vsize 3
+  #install unity-tweak-tool
+  sudo apt-get install unity-webapps-service
+  sudo apt-get install unity-tweak-tool
+  #install dark theme and moka icons
+  sudo add-apt-repository ppa:noobslab/themes
+  sudo add-apt-repository ppa:moka/stable
+  sudo apt-get update
+  sudo apt-get install vertex-theme
+  sudo apt-get install moka-icon-theme
 
   echo "####################################"
   echo "Install Web Browsers"
