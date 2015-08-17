@@ -95,7 +95,7 @@ myWorkspaces =
     "0:VM",    "Extr1", "Extr2"
   ]
 
-startupWorkspace = "1:Dev"  -- which workspace do you want to be on after launch?
+startupWorkspace = "1:Term"  -- which workspace do you want to be on after launch?
 
 {-
   Layout configuration. In this section we identify which xmonad
@@ -206,11 +206,11 @@ myKeyBindings =
     , ((myModMask, xK_a), sendMessage MirrorShrink)
     , ((myModMask, xK_z), sendMessage MirrorExpand)
     , ((myModMask, xK_p), spawn "synapse")
-    , ((myModMask .|. mod1Mask, xK_space), spawn "synapse")
     , ((myModMask, xK_u), focusUrgent)
-    , ((0, 0x1008FF12), spawn "amixer -q set Master toggle")
-    , ((0, 0x1008FF11), spawn "amixer -q set Master 10%-")
-    , ((0, 0x1008FF13), spawn "amixer -q set Master 10%+")
+    , ((0, 0x1008FF1), spawn "amixer -q set Master toggle")
+    , ((0, 0x1008FF2), spawn "amixer -q set Master 10%-")
+    , ((0, 0x1008FF3), spawn "amixer -q set Master 10%+")
+    , ((myModMask, xK_l), spawn "bash ~/Source/configs/scripts/pixellock.sh") {- make mod-l run custom lock -}
   ]
 
 
